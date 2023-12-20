@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Servindo tags para formulário - parte 2</title>
+</head>
+<body>
+
+<main>
+
+    <form action="">
+        <fieldset>
+            <legend>
+                Meu Formulário
+            </legend>
+
+            <p>Insira seu nome: <input type="text" required placeholder="Digite seu nome completo"></p>
+
+            <p>Insira seu email: <input type="email" required="" placeholder="Digite um e-mail válido"></p>
+
+            <p>Insira sua senha: <input type="password" required="required" placeholder="Digite uma senha forte"></p>
+
+            <p>Insira seu CPF: <input type="text" required placeholder="123.456.789-07" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"></p>
+
+            <p>Insira seu email: <input type="email" required="" placeholder="Digite um e-mail válido" disabled></p>
+
+            <p>Insira sua senha: <input type="password" required="required" placeholder="Digite uma senha forte"
+                                        readonly="readonly"></p>
+
+            <p>Insira seu sexo: <br>
+                <input type="radio" name="sexo" checked="checked"> Masculino <br>
+                <input type="radio" name="sexo"> Feminino <br>
+                <input type="radio" name="sexo"> Prefiro não informar
+            </p>
+
+            <p>Informe a sua tecnologia preferida: <br>
+                <input type="checkbox" checked="checked"> HTML5 <br>
+                <input type="checkbox"> CSS3 <br>
+                <input type="checkbox"> Jquery <br>
+                <input type="checkbox"> PHP <br>
+                <input type="checkbox"> Java
+            </p>
+
+            <p>Selecione um arquivo <input type="file">
+            </p>
+
+            <p>Informe uma url <input type="url">
+            </p>
+
+            <p>Selecione um curso <br>
+                <select name="cursos" id="cursos">
+
+                    <optgroup label="Cursos Iniciante">
+                        <option value="" selected="selected">Selecione um curso</option>
+                        <option value="">HTML5 e CSS3 Essentials</option>
+                        <option value="">Jquery Essentials</option>
+                    </optgroup>
+
+                    <optgroup label="Cursos Intermediários">
+                        <option value="">FullStack PHP Developer</option>
+                        <option value="">WordPress</option>
+                    </optgroup>
+
+                    <optgroup label="Cursos de Banco de Dados">
+                        <option value="">Maria DB Essentials</option>
+                    </optgroup>
+
+                    <optgroup label="Cursos de DevOps">
+                        <option value="">Git e GitFlow</option>
+                    </optgroup>
+
+                </select>
+            </p>
+
+            <p>
+                Range: <input type="range">
+            </p>
+
+            <p>
+                Color: <input type="color">
+            </p>
+
+            <p>
+                Date: <input type="date">
+            </p>
+
+            <p>
+                Time: <input type="time">
+            </p>
+
+            <p>
+                Datetime: <input type="datetime-local">
+            </p>
+
+            <p>
+                Mês: <input type="month">
+            </p>
+
+            <p>
+                Semana: <input type="week">
+            </p>
+
+            <p>
+                <button type="submit">Validar</button>
+            </p>
+
+            <p>
+                <button type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+
+</main>
+
+</body>
+</html>
